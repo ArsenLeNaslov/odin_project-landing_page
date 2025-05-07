@@ -133,6 +133,12 @@
 	color: #1F2937;
 }
 
+.sub-menu-link {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+  }
+
 .imgSub-Menu {
   width: 200px;
   height: 200px;
