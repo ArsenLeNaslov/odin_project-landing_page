@@ -1,94 +1,166 @@
+/* CSS settings for the whole page */
 * {
-    font-family: Roboto, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
 
-  /* First Section */
-  .header,
-  .modal-hero,
-  .footer {
-    background-color: #1F2937;
-  }
+/* Background Colour for Header, Hero, and Footer */
+.header,
+.modal-hero,
+.footer {
+	background-color: #1F2937;
+}
 
-  /* Header */
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 24px 100px;
-  }
+/* First Section - Header */
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 24px 100px;
+	flex-wrap: wrap;
+}																
 
-  .logo {
-    font-size: 24px;
-    color: #F9FAF8;
-  }
+.logo {
+	font-size: 24px;
+	color: #F9FAF8;
+	margin-bottom: 12px;
+	flex-wrap: wrap;
+}
 
-  .nav_links {
-    display: flex;
-    gap: 24px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #b6b9bc;
-    font-size: 18px;
-  }
+.nav_links a {
+  color: #c3c5c6;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 8px;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease; /* Hover effect */
+}
 
-  /* Hero */
-  .modal-hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px 100px;
-  }
+.nav_links a:hover { 
+  transform: translateY(-3px); /* Scales the menu item when hovered */
+  color: white; /* Changes the text colour on hover */
+}
 
-  .hero-left {
-    max-width: 500px;
-  }
-  .hero-main {
-    font-size: 48px;
-    font-weight: 900;
-    color: #F9FAF8;
-  }
+/* First Section - Hero */
+.modal-hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 80px 100px;
+}
 
-  .hero-text {
-    font-size: 18px;
-    color: #E5E7EB;
-    margin-bottom: 20px;
-  }
+.hero-left {
+	max-width: 500px;
+}
 
-  .signup {
-    background-color: #3882F6;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-  }
+.hero-main {
+	font-size: 48px;
+	font-weight: 900;
+	color: #F9FAF8;
+	margin-bottom: 15px;
+}
 
-  .hero-right,
-  .img {
-    width: 500px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-  }
+.hero-text {
+	font-size: 16px;
+	text-decoration: none;
+	color: #E5E7EB;
+	margin-bottom: 20px;
+}
 
-  /* Footer */
-  .footer,
-  .br {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 28px;
-    color: #F9FAF8;
-    text-align: center;
-    flex-direction: column;
-    font-size: 16px;
-  }
-  
+.hero-text a {
+  color: inherit;
+}    
+
+.contact {
+	background-color: #3882F6;
+	color: white;
+	text-decoration: none;
+	border: none;
+	padding: 10px 24px;
+	border-radius: 8px;
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	transition: transform 0.2s ease, background-color 0.3s ease; /* Hover effect */
+}
+
+.contact:hover {
+	transform: scale(1.04); /* Scales the Contact button when hovered */
+	background-color: #2563EB; /* Changes the text colour on hover */
+}
+
+.hero-right,
+.imgSunset {
+	width: 1000px;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border-radius: 40px;
+	flex-wrap: wrap;
+}
+
+/* Second Section - Sub Menus */
+.menu {
+  text-align: center;
+	padding: 60px 80px;
+}
+
+.info-title {
+	text-align: center;
+	font-size: 36px;
+	font-weight: 900;
+	padding: 30px;
+	color: #1F2937;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	height: 240px;
+	flex-wrap: wrap;
+	gap: 48px;
+}
+
+.sub-menu {
+	max-width: 200px;
+	text-align: center;
+  font-size: 18px;
+	color: #1F2937;
+}
+
+.imgSub-Menu {
+  width: 200px;
+  height: 200px;
+	display: block;
+	object-fit: cover;
+	overflow: hidden;
+	border: 4px solid #3882F6;
+	margin: 0 auto 16px;
+	border-radius: 15px;
+	transition: transform 0.3s ease; /* Hover effect */
+}
+
+.imgSub-Menu:hover {
+	transform: scale(1.2); /* Scales the Menu icon when hovered */
+}
+
+.text {
+	margin-top: 10px;
+}
+
+/* Fourth Section - Footer */
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 28px;
+	color: #F9FAF8;
+	text-align: center;
+	flex-direction: column;
+	font-size: 16px;
+}
