@@ -293,7 +293,7 @@
 }
 
 .call-button:hover {
-  transform: scale(1.04);
+  transform: scale(1.2);
   background-color: #2563EB;
 }
 
